@@ -12,7 +12,7 @@ with source_data as (
 
     select 1 as id
     union all
-    select 12 as id
+    select null as id
 
 )
 
@@ -23,4 +23,4 @@ from source_data
     Uncomment the line below to remove records with null `id` values
 */
 
--- where id is not null
+where id is not null
